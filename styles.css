@@ -5,4 +5,14 @@ h1, h2 {
 
 .jumbotron {
   height: 150px;
+  margin-top: 1px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
+
+.img-circle {
+  padding: 10px;
+  width: 200px;
+}
+
+
