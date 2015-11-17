@@ -18,8 +18,8 @@ body {
   background-color: #84B0DE;
 }
 
-footer {
-  color: red;
+img:hover {
+  opacity: 0.8;
 }
 
 .jumbotron {
@@ -37,6 +37,11 @@ footer {
 }
 
 .footer {
+  position: absolute;
+  left: 20px;
+}
+
+.timer {
   position: absolute;
   left: 20px;
 }
