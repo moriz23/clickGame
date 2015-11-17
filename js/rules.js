@@ -1,5 +1,3 @@
-
-
 //Rules Button Alert// 
 
 document.getElementById("rules").addEventListener("click", showRules);
