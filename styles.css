@@ -6,6 +6,9 @@ h1, h2 {
   text-shadow: 2px 2px 5px #fff;
 }
 
+h1{
+  margin-bottom: 20px;
+}
 
 p {
   font-size: 20px;
@@ -20,6 +23,7 @@ body {
 
 img:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .jumbotron {
@@ -46,7 +50,31 @@ img:hover {
   left: 20px;
 }
 
+/* Dev Verification */
+.verification{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  font-size: 1.3em;
+}
 
+.verified-img{
+  max-height: 125px;
+  margin-bottom: 10px;
+}
 
+.verified-img:hover{
+  opacity: 1;
+  cursor: initial;
+}
 
+.verified-modal-body
+.verified-by,
+.verified-confirm{
+  color: #fff;
+  font-family: helvetica, sans-serif;
+}
 
+.verified-modal-body{
+  background: #000D8F;
+}
