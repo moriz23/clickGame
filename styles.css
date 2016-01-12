@@ -65,6 +65,7 @@ img:hover {
 
 .verified-img:hover{
   opacity: 1;
+  cursor: initial;
 }
 
 .verified-modal-body
