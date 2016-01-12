@@ -52,7 +52,6 @@ function increaseScore(){
 }
 
 function reInitialize() {
-  var players = document.getElementsByClassName("players");
   for(var i=0;i<players.length;i++){
     players[i].removeEventListener('click', decreaseTime);
   }
