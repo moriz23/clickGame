@@ -5,7 +5,7 @@ var score = 0;
 
 var players = document.getElementsByClassName("players");
   for(var i=0;i<players.length;i++){
-    players[i].removeEventListener('click', decreaseTime, false);
+    players[i].removeEventListener('click', decreaseTime);
   }
   score = 0;
 
@@ -13,10 +13,10 @@ function startGame() {
   if (started === false) {
     started = true;
     if (started === true) {
-      startButton.text = "Start";
+      // startButton.text = "Start";
       countDown();
       for(var i=0;i<players.length;i++){
-        players[i].addEventListener('click', increaseScore, false);
+        players[i].addEventListener('click', increaseScore);
       }
     }
   }
@@ -46,8 +46,8 @@ function countDown() {
 function increaseScore(){
   if (started == true){
     score++;
-    this.removeEventListener("click", increaseScore, false);
-    this.addEventListener("click", decreaseTime, false);
+    this.removeEventListener("click", increaseScore);
+    this.addEventListener("click", decreaseTime);
   } else {
   //do nothing
   }
@@ -56,10 +56,10 @@ function increaseScore(){
 function reInitialize() {
   var players = document.getElementsByClassName("players");
   for(var i=0;i<players.length;i++){
-    players[i].removeEventListener('click', decreaseTime, false);
+    players[i].removeEventListener('click', decreaseTime);
   }
   for(var i=0;i<players.length;i++){
-    players[i].addEventListener('click', increaseScore, false);   
+    players[i].addEventListener('click', increaseScore);   
   }  
   
   score = 0;
