@@ -50,7 +50,24 @@ img:hover {
   left: 20px;
 }
 
+.verification{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  font-size: 1.3em;
+}
 
+.verified-img{
+  max-height: 125px;
+}
 
+.verified-modal-body
+.verified-by,
+.verified-confirm{
+  color: #fff;
+  font-family: helvetica, sans-serif;
+}
 
-
+.verified-modal-body{
+  background: #000D8F;
+}
