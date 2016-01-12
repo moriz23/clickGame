@@ -5,9 +5,6 @@ var finalResult = document.getElementById('final-result');
 var score = 0;
 
 var players = document.getElementsByClassName("players");
-  for(var i=0;i<players.length;i++){
-    players[i].removeEventListener('click', decreaseTime);
-  }
 
 function startGame() {
   if (started === false) {
@@ -59,7 +56,6 @@ function reInitialize() {
   for(var i=0;i<players.length;i++){
     players[i].addEventListener('click', increaseScore);   
   }  
-  
   score = 0;
 }
 
