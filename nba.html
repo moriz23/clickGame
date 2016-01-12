@@ -12,9 +12,10 @@
 <body>
 
 <!-- Jumbotron -->
-  <div class="jumbotron">
+  <div class="jumbotron text-center">
     <h1>NBA Face Clickers</h1>
-    <h2><a class="btn btn-info" href="#" role="button" id="start">Start</a>  <button type="button" class="btn btn-info" id="rules">Rules</button></h2>
+    <a class="btn btn-info" href="#" role="button" id="start">Start</a>
+    <button type="button" class="btn btn-info" id="rules" data-toggle="modal" data-target="#rules-modal">Rules</button>
   </div>
 
 <!-- NBA Faces -->
@@ -49,17 +50,47 @@
     </div>
   </div>
 
-    <!--Footer-->
-
-    <footer>
-      <div>
-        <p class="footer">&copy; 2015 Mohammed Rizvi</p>
+  <!-- Rules Modal -->
+  <div id="rules-modal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3>Game Rules</h3>
+        </div>
+        <div class="modal-body">
+          <p>Click on as many faces as possible (only one click counts per image) in under 20 seconds. Good Luck!</p>
+        </div>
       </div>
-    </footer>
+    </div>
+  </div>
+
+  <!-- Results Modal -->
+  <div id="results-modal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3>Game Results</h3>
+        </div>
+        <div class="modal-body">
+          <p id="final-result"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer>
+    <div>
+      <p class="footer">&copy; 2015 Mohammed Rizvi</p>
+    </div>
+  </footer>
 
 <!--javascript tag-->
- <script type="text/javascript" src="js/game.js"></script>
- <script type="text/javascript" src="js/rules.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
 
 </body>
 </html>

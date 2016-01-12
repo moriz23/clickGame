@@ -1,6 +1,7 @@
 document.getElementById("start").addEventListener("click", startGame);
 var started = false;
 var startButton = document.getElementById("start");
+var finalResult = document.getElementById('final-result');
 var score = 0;
 
 var players = document.getElementsByClassName("players");
@@ -37,7 +38,8 @@ function countDown() {
   } else if (startButton.text === "0"){
     startButton.text = "Play Again?";
     started = false;
-    alert("Your Score is " + score);
+    finalResult.textContent = "Your Score is " + score;
+    $('#results-modal').modal('toggle');
     reInitialize();
   }
 }
