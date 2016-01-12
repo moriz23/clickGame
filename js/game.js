@@ -13,7 +13,7 @@ function startGame() {
   if (started === false) {
     started = true;
     if (started === true) {
-      // startButton.text = "Start";
+      startButton.text = "Start";
       countDown();
       for(var i=0;i<players.length;i++){
         players[i].addEventListener('click', increaseScore);
@@ -48,8 +48,6 @@ function increaseScore(){
     score++;
     this.removeEventListener("click", increaseScore);
     this.addEventListener("click", decreaseTime);
-  } else {
-  //do nothing
   }
 }
 
