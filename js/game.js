@@ -78,9 +78,10 @@ $('.rules-button').on('click', ruleShow);
 function verification(){
   $('.verified-img').attr({
     src: 'img/alex.jpg',
-    alt: 'picture of developer'
+    alt: 'picture of Alex Ly, the developer who verified this code.'
   });
-  $('.verified-by').html('Alex Ly');
+  $('.verified-by').html('Developer: Alex Ly');
+  $('.verified-confirm').html('I have verified this code and it looks ok.');
   $('#verified-modal').modal('toggle');
 }
 
